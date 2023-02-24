@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+.header{
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(45deg, rgb(11, 46, 63), rgb(71, 193, 241));
+    color: aliceblue;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+/* body */
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formstyle {
+    max-width: 350px;
+    height: 450px;
+    max-height: 450px;
+    margin: 130px auto;
+    border: 3px solid rgb(9, 33, 42);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.6);
+    background: radial-gradient(rgb(71, 193, 241), rgb(11, 46, 63));
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    text-shadow: 15px 10px px rgba(0, 0, 0, 0.6);
+    background: radial-gradient(rgb(137, 207, 235)20%, rgb(16, 81, 113));
+    height: 100vh;
+}
+.textview {
+    width: 290px;
+    height: 55px;
+    margin: 5px 5px 25px 5px;
+    font-size: 30px;
+    padding: 10px;
+    background: radial-gradient(lightgreen, rgba(21, 163, 21, 0.675));
+    border-radius: 5px;
+    text-align: right;
+    border: 2px solid rgb(9, 33, 42);
+}
+input[type=text]:hover {
+    background: radial-gradient(rgb(81, 185, 81), rgba(10, 123, 10, 0.675));
+}
+#copy{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.271);
+}
+#copy a{
+    text-decoration: none;
+    color: rgba(137, 207, 235, 0.627);
+}
+#copy a:hover{
+    color: rgba(11, 46, 63, 0.705);
+    transition: 0.5s;
+}
+.formstyle form, .formstyle table{
+    position: relative;
+}
+input:focus{
+    outline: 1px solid rgb(11, 46, 63);
+}
+p{
+    position: relative;
+}
+#equal{
+    height: 110px;
+}
+#zero{
+    width: 110px;
+}
+/* buttons */
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 4px;
+    cursor: pointer;
+    background: radial-gradient(rgb(94, 166, 194),rgb(16, 81, 113));
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid rgb(9, 33, 42);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(44, 104, 128), rgb(3, 42, 61));
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.btn:hover::before {
+    opacity: 1;
+}
+#red {
+    font-size: 20px;
+    color: rgb(161, 5, 5);
+}
+
+#red:hover {
+    color: rgb(231, 64, 64);
+    transition: 0.4s;
+}
+
+#green {
+    font-size: 20px;
+    color: rgb(9, 92, 9);
+}
+
+#green:hover {
+    color: rgb(98, 204, 98);
+    transition: 0.4s;
+}
+#yellow{
+    font-size: 20px;
+    color: rgb(189, 189, 67);
+}
+#yellow:hover{
+    color: rgb(215, 215, 118);
+    transition: 0.4s;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO WEB APP</title>
+    <link rel="shortcut icon" href="img/todo-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initClock()">
+    <section id="header">
+        <img src="img/todo-icon.png" alt="todo-icon">
+        <h1>TO-DO WEB APP</h1>
+    </section>
+    <section id="container">
+        <div class="bg-img"></div>
+        <div class="taskinput">
+            <div class="datetime">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+            <div class="addTask">
+                <input type="text" placeholder="What do you have planned?">
+                <textarea name="" id="descri" cols="30" rows="8" placeholder="Description about it..."></textarea>
+                <button>Add Task</button>
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="task-heading">
+                <h1>Tasks</h1>
+            </div>
+            <ol class="notCompleted">
+                <h3>Not Completed</h3>
+                <div class="task-nav">
+                    <p id="title">Title</p>
+                    <p id="des">Description</p>
+                    <p id="tim">Time</p>
+                </div>
+            </ol>
+            <ol class="Completed">
+                <h3>Completed</h3>
+                <div class="task-nav">
+                    <p id="title">Title</p>
+                    <p id="des">Description</p>
+                    <p id="tim">Time</p>
+                </div>
+            </ol>
+        </div>
+        <div id="copy">
+            <p>&copy;copyright | <a href="https://www.linkedin.com/in/cheegitimahesh/" target="_blank">Mahesh Cheegiti</a> | 2013</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4d482375c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
